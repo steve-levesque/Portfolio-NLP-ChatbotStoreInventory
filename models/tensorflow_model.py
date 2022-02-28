@@ -16,8 +16,8 @@ def tf_model_network(train_X, train_y):
     return model
 
 
-def tf_model_save(model, training, output, n_epoch=200, batch_size=4, verbose=True):
-    model.fit(training, output, n_epoch=n_epoch, batch_size=batch_size, show_metric=verbose)
+def tf_model_save(model, train_X, train_y, n_epoch=200, batch_size=4, verbose=True):
+    model.fit(train_X, train_y, n_epoch=n_epoch, batch_size=batch_size, show_metric=verbose)
     model.save("model.tflearn")
 
 
