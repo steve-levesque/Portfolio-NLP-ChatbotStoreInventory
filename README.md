@@ -104,6 +104,8 @@ See the `LICENSE` file at the root of the project directory for more information
 
 Sources :
 
+- https://towardsdatascience.com/how-to-build-a-basic-chatbot-from-scratch-f63a2ccf5262
+
 - https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077
 
 - https://www.tensorflow.org/guide/migrate
