@@ -22,7 +22,7 @@ The Chatbot Store Inventory is a simple NLP project to demonstrate interaction w
 ### Model
 The model explaination will be detailed in a Kaggle Notebook to make it possible to run fast and efficiently.
 
-Kaggle Notebook link : TODO
+Kaggle Notebook link: https://www.kaggle.com/stevelevesque/portfolio-nlp-chatbotstoreinventory-simplekernel
 
 But, in a very simple matter, the chatbot is based on two models to assist in a logic accuracy.
 
