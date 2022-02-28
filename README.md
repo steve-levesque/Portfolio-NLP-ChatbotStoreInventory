@@ -73,6 +73,15 @@ See the `LICENSE` file at the root of the project directory for more information
 <!-- Acknowlegements and Sources -->
 ## Acknowlegements and Sources
 
+Sources :
+
+- https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077
+
+- https://www.tensorflow.org/guide/migrate
+
+- https://huggingface.co/distilbert-base-uncased-distilled-squad
+
+- https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3-fr
 
 
 
