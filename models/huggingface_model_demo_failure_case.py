@@ -4,7 +4,7 @@ from transformers import pipeline
 model_name = "distilbert-base-uncased-distilled-squad"
 nlp = pipeline('question-answering', model=model_name, tokenizer=model_name)
 
-with open("intents.json") as file:
+with open("../data/intents-store_inventory.json") as file:
     data = json.load(file)
 
 disable_helper = True
