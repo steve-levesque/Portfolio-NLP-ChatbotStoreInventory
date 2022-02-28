@@ -19,6 +19,21 @@
 ### Introduction
 The Chatbot Store Inventory is a simple NLP project to demonstrate interaction with a user by the mean of natural language. It can be for simple discussion, general information or to query the inventory count of a specific article from a database.
 
+### Model
+The model explaination will be detailed in a Kaggle Notebook to make it possible to run fast and efficiently.
+
+Kaggle Notebook link : TODO
+
+But, in a very simple matter, the chatbot is based on two models to assist in a logic accuracy.
+
+First, the model 1 is a neural network with tensorflow that has been feeded augmented data by the mean of stemming and vectorization (lancaster + bag of words respectively).
+
+After, the model 2 is a HuggingFace distilbert transformer, which is very simple to add in a project and use (without training) with the intent to query more specificaly the inventory with question-answering type of formula (instead of a similarity type of check like model 1).
+
+The tradeoffs of why the 2 models works fine in alternance is discussed in the notebook.
+
+![image](https://user-images.githubusercontent.com/42849270/156004629-e2614582-588c-44b6-9823-4109e6e597a1.png)
+
 
 
 <!-- Repo's Content Tree -->
@@ -27,10 +42,16 @@ The Chatbot Store Inventory is a simple NLP project to demonstrate interaction w
   <summary><b>Project's Tree</b></summary>
     
   ``` bash
+    |- data                   # Intents data, pickle file, sql database, etc.
+    |- docs                   # Useful documents.
+    |- models                 # All models for the chatbot.
+    |- utils                  # Contains all utilities for the website and chatbot. (i.e. stemming, vectorization, dataset, text_processing, etc.)
     |- .gitignore             #
     |- LICENSE                #
     |- README.md              # This file
-    |- requirements.txt       #
+    |- app.py                 # Website logic and entry-points. (CRUD and chatbot chatting)
+    |- main_train.py          # Logic to train the model. (stemming, vectorization and tensorflow NN)
+    |- requirements.txt       # Contains all necessary modules.
   ```
 </details>
 
@@ -38,8 +59,8 @@ The Chatbot Store Inventory is a simple NLP project to demonstrate interaction w
 <!-- Getting Started -->
 ## Installation
 For this project to work, some programs needs to be installed with the required Python libraries:
-- Python 3.x
-- Jupyter Notebook (optional, but necessary for the notebooks)
+- Python 3.x (i.e. and all modules in requirements.txt)
+- A web browser.
 
 ``` bash
 pip install -r requirements.txt
@@ -47,6 +68,14 @@ pip install -r requirements.txt
 
 
 ## How to Execute
+
+- Executing the venv (virtual environment), in windows with the commands in the /docs folder, or automatically with PyCharm.
+
+- Running the main_train.py file, which is not necessay with all included data, but is recommended to see if everything works.
+
+- Running the flask application with the IDE or "flask run" to start using the CRUD and chatbot.
+
+![image](https://user-images.githubusercontent.com/42849270/156001703-b1457d88-6fd1-4bd1-8790-5f3a691c3bdf.png)
 
 
 
